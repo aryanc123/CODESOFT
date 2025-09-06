@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Project</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6fb;
+            color: #222;
+        }
+        header {
+            background: #4f8cff;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1rem 2rem 1rem;
+            background: #eaf1ff;
+            /* Add background image */
+            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(234, 241, 255, 0.85); /* Overlay for readability */
+            z-index: 0;
+        }
+        .hero > * {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            text-align: center;
+        }
+        .hero button {
+            background: #4f8cff;
+            color: #fff;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .hero button:hover {
+            background: #356ad2;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 3rem 1rem;
+            background: #fff;
+        }
+        .feature-box {
+            background: #f4f6fb;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 2rem;
+            width: 300px;
+            text-align: center;
+        }
+        .feature-box h3 {
+            margin-bottom: 1rem;
+            color: #4f8cff;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 900px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /* Add smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Contact section styling */
+        #contact-section {
+            background: #eaf1ff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        #contact-section h2 {
+            color: #4f8cff;
+            margin-bottom: 1rem;
+        }
+        #contact-section a {
+            color: #356ad2;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Awesome Landing Page</h1>
+        <nav>
+            <a href="#hero-section">Home</a>
+            <a href="#features-section">Features</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+    </header>
+    <section class="hero" id="hero-section">
+        <h1>Welcome to My Next Project</h1>
+        <p>
+            Build beautiful, responsive landing pages with ease. Unleash your creativity and learn the fundamentals of web design with this beginner-friendly project.
+        </p>
+        <button>Get Started</button>
+    </section>
+    <section class="features" id="features-section">
+        <div class="feature-box">
+            <h3>Easy to Customize</h3>
+            <p>Change colors, fonts, and layout to match your style and brand.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Responsive Design</h3>
+            <p>Looks great on all devices, from desktop to mobile.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Modern Layout</h3>
+            <p>Clean and modern sections to showcase your content effectively.</p>
+        </div>
+    </section>
+    <section id="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+            For more information, email us at
+            <a href="aaryanchauarsiya65@gmail.com">info@example.com</a>
+            or visit our
+            <a href="https://github.com/aryanc123" target="_blank">GitHub</a>.
+        </p>
+    </section>
+    <footer>
+        &copy; 2025 Aaryan chaurasiya . All rights reserved.
+    </footer>
+</body>
+</html>
